@@ -12,7 +12,7 @@
 start_date = function(year) {
   # Finds start state for this calendar year
   jan1 = as.Date(paste(year, '-01-01', sep=''))
-  wday = as.numeric(MMWRweekday(jan1))
+  wday = as.numeric(CDCweekday(jan1))
   jan1 - (wday-1) + 7*(wday>4)
 }
 

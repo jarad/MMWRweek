@@ -10,7 +10,7 @@
 #' @export 
 #' @examples
 #' y = as.Date(paste(1999:2011, "-12-31", sep = ""))
-#' cbind(y, MMWR(y))
+#' cbind(y, CDCweek(y))
 CDCweek = function(date) {
   date = as.Date(date)
   #year = as.numeric(format(date, '%Y'))

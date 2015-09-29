@@ -1,0 +1,11 @@
+Package: CDCweek
+Type: Package
+Title: Week of the year according to CDC
+Version: 0.1
+Date: 2015-09-29
+Author: Jarad Niemi <niemi@iastate.edu>
+Maintainer: Jarad Niemi <niemi@iastate.edu>
+Suggests: testthat
+Description: This package calculates CDC week from dates.
+License: GPL (>= 2) | file LICENSE
+LazyLoad: yes
