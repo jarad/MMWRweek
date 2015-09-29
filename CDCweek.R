@@ -18,7 +18,7 @@ CDCweek = function(date) {
   start_date      = get_start_date(date)
 
   return(data.frame(day  = as.numeric(MMWRweekday(date)), 
-                    week = round(as.numeric(date - start_date - 3) / 7)+1, 
+                    week = round(as.numeric(date - start_date - 3) / 7)+1, # why 3? 
                     year = as.numeric(format(start_date+7, '%Y'))))
 } 
 
