@@ -5,7 +5,7 @@
 #' @param date Vector which can be coerced to class \code{Date}
 #' @return An integer vector of weekdays (1-7, Sunday is 1)
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
-#' @seealso \code{\link{strptime}}
+#' @seealso \code{\link{MMWRweek}}
 #' @export
 #' @examples
 #' y <- as.Date(paste(1999:2011, "-12-31", sep = ""))
