@@ -2,7 +2,7 @@
 #' 
 #' Finds the state date given a numeric calendar year
 #' 
-#' @param year vector integer of four digit years
+#' @param year integer vector of four digit years
 #' @return Date vector for January 1st of the calendar year
 #' @seealso \code{\link{get_start_date}}
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
@@ -31,7 +31,7 @@ start_date = function(year) {
 #' following MMWR year. This function returns the start date for the year 
 #' associated with this date.
 #' 
-#' @param date Date vector 
+#' @param date vector which can be coerced to class \code{Date}
 #' @return Date vector for start date of CDC year associated with date
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
 #' @seealso \code{\link{start_date}}
