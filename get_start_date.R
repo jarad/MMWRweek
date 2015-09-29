@@ -1,3 +1,10 @@
+start_date = function(year) {
+  # Finds start state for this calendar year
+  jan1 = as.Date(paste(year, '-01-01', sep=''))
+  wday = as.numeric(MMWRweekday(jan1))
+  jan1 - (wday-1) + 7*(wday>4)
+}
+
 get_start_date <- function(date) {
   # From http://stackoverflow.com/questions/28238438/epidemiological-curve-using-r-and-epitools-gives-wrong-epiweeks
   # Values for MMWR week range from 1 to 53, although most years consist of 
@@ -13,20 +20,15 @@ get_start_date <- function(date) {
   # following MMWR year.
   year = as.numeric(format(as.Date(date),'%Y'))
   
-  # Find start date for current calendar year
-  jan1c = as.Date(paste(year, '-01-01', sep=''))
-  wdayc = as.numeric(MMWRweekday(jan1c))
-  out_c = jan1c - (wdayc-1) + 7*(wdayc>4)
-  
-  # Find start date for previous calendar year
-  jan1p = as.Date(paste(year-1, '-01-01', sep=''))
-  wdayp = as.numeric(MMWRweekday(jan1p))
-  out_p = jan1p - (wdayp-1) + 7*(wdayp>4)
+  # Find start date for current and previous calendar years
+  start_date_current = start_date(year  )
+  start_date_prev    = start_date(year-1)
   
   # Return start_date for current year if date is after start date
   # otherwise return start_date for previous year
-  out = out_c
-  out[date<out_c] = out_p[date<out_c]
+  out = start_date_current
+  before = date < start_date_current
+  out[before] = out[before]
   return(out)
 }
 
