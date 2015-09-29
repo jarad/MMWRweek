@@ -10,7 +10,7 @@
 #' @examples
 #' y = as.Date(paste(1999:2011, "-12-31", sep = ""))
 #' cbind(y, MMWR(y))
-MMWR = function(date) {
+CDCweek = function(date) {
   #requires date in format YYYY-MM-DD
   #date in POSIXlt
   date = as.Date(date)
@@ -18,7 +18,7 @@ MMWR = function(date) {
   start_date      = get_start_date(date)
 
   return(data.frame(day  = as.numeric(MMWRweekday(date)), 
-                    week = round(as.numeric(date - start_date) / 7)+1, 
+                    week = round(as.numeric(date - start_date - 3) / 7)+1, 
                     year = as.numeric(format(start_date+7, '%Y'))))
 } 
 
