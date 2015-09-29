@@ -10,7 +10,7 @@
 #' @examples
 #' y <- as.Date(paste(1999:2011, "-12-31", sep = ""))
 #' data.frame(date = format(dates), weekday = weekdays(y), MMWRweekday = MMWRweekday(y))
-MMWRweekday = function(date) {
+CDCweekday = function(date) {
   date = as.Date(date)
   date = factor(weekdays(date), levels=c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'))
   return(as.integer(date))
