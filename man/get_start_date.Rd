@@ -7,7 +7,7 @@
 get_start_date(date)
 }
 \arguments{
-\item{date}{Date vector}
+\item{date}{vector which can be coerced to class \code{Date}}
 }
 \value{
 Date vector for start date of CDC year associated with date
@@ -21,10 +21,8 @@ that has at least four days in the calendar year. For example, if January
 1 occurs on a Sunday, Monday, Tuesday or Wednesday, the calendar week that
 includes January 1 would be MMWR week #1. If January 1 occurs on a Thursday,
 Friday, or Saturday, the calendar week that includes January 1 would be the
-last MMWR week of the previous year (#52 or #53). Because of this rule,
-December 29, 30, and 31 could potentially fall into MMWR week #1 of the
-following MMWR year. This function returns the start date for the year
-associated with this date.
+last MMWR week of the previous year (#52 or #53). This function returns the
+start date for the year associated with this date.
 }
 \examples{
 get_start_date(as.Date('2015-01-01')+ -10:10)

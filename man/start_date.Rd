@@ -7,7 +7,7 @@
 start_date(year)
 }
 \arguments{
-\item{year}{vector integer of four digit years}
+\item{year}{integer vector of four digit years}
 }
 \value{
 Date vector for January 1st of the calendar year
