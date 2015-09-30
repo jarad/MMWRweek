@@ -41,14 +41,16 @@ get_start_date <- function(date) {
   year = as.integer(format(as.Date(date),'%Y'))
   
   # Find start date for current and previous calendar years
-  start_date_current = start_date(year  )
-  start_date_prev    = start_date(year-1)
+  sd_prev    = start_date(year-1)
+  sd_current = start_date(year  )
+  sd_next    = start_date(year+1)
   
-  # Return start_date for current year if date is after start date
-  # otherwise return start_date for previous year
-  out = start_date_current
-  before = date < start_date_current
-  out[before] = out[before]
+  before = date <  sd_current
+  after  = date >= sd_next
+  
+  out = sd_current
+  out[before] = sd_prev[before]
+  out[after]  = sd_next[after]
   return(out)
 }
 
