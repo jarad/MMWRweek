@@ -2,19 +2,19 @@ context('CDCweekday')
 
 days = c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday')
 
-test_that('CDCweekday returns a factor', {
-  date = c('1999-12-31', '2005-06-15', '2014-01-01')
-  wday = CDCweekday(date)
+dates = seq(as.Date('1900-01-01'), as.Date('2015-12-31'), by='day')
+truth = factor(weekdays(dates), levels=days)
+
+test_that('CDCweekday returns a factor vector', {
+  wday = CDCweekday(dates)
   expect_that(wday, is_a('factor'))
   expect_that(levels(wday), equals(days))
-  expect_that(length(wday), equals(length(date)))
+  expect_that(length(wday), equals(length(dates)))
 })
 
 test_that('CDCweekday returns correct values', {
-  chars = paste(1999:2011, "-12-31", sep="")
-  dates = as.Date(chars)
-  truth = factor(weekdays(dates), levels=days)
-  expect_that(CDCweekday(chars), equals(truth))
-  expect_that(CDCweekday(dates), equals(truth))
+  dates_chr = as.Date(dates)
+  expect_that(CDCweekday(dates    ), equals(truth))
+  expect_that(CDCweekday(dates_chr), equals(truth))
 })
  
