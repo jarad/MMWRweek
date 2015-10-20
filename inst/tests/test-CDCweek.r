@@ -6,7 +6,7 @@ truth = readRDS('CDCweek-truth.rds')
 test_that('CDCweek returns a factor vector', {
   week = CDCweek(dates)
   expect_that(week, is_a('data.frame'))
-  expect_that(names(week), equals(c('day','week','year')))
+  expect_that(names(week), equals(c('CDCyear', 'CDCweek', 'CDCday')))
 })
 
 test_that('CDCweek returns correct values', {
