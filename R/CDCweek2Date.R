@@ -18,7 +18,7 @@ CDCweek2Date = function(CDCyear, CDCweek, CDCday=NULL) {
 
   stopifnot(length(CDCyear) == length(CDCweek))
   
-  if (is.null(CDCday)) rep(1,length(CDCweek))
+  if (is.null(CDCday)) CDCday = rep(1,length(CDCweek))
   stopifnot(all(0 < CDCday & CDCday < 8))
   
   jan1 = start_date(CDCyear)
