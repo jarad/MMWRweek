@@ -10,7 +10,7 @@ CDCweek(date)
 \item{date}{vector which can be coerced to class \code{Date}}
 }
 \value{
-data.frame with elements day (of the week), CDC week, and CDC year
+data.frame with elements CDCday (of the week), CDCweek, and CDCyear
 }
 \description{
 This function returns the CDC week and year for the date(s) provided.
