@@ -27,3 +27,4 @@ test_that('MMWRweek2Date defaults to return first day of the MMWR week', {
                MMWRweek2Date(d$MMWRyear, d$MMWRweek, rep(1,length(d$MMWRyear))))
 })
  
+

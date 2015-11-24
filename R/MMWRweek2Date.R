@@ -5,12 +5,12 @@
 #' @param MMWRyear numeric vector of years
 #' @param MMWRweek numeric vector of weeks
 #' @param MMWRday numeric vector of days, defaults to a vector of 1s
-#' @return Date vector of actual dates
+#' @return Date vector of dates associated with MMWR year, week, and day
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
 #' @seealso \code{\link{MMWRweek}}
 #' @export
 #' @examples
-#' MMWRweek2Date(2015,36,3)
+#' MMWRweek2Date(MMWRyear=2015,MMWRweek=36,MMWRday=3)
 MMWRweek2Date = function(MMWRyear, MMWRweek, MMWRday=NULL) {
   stopifnot(all(is.numeric(MMWRyear)))
   stopifnot(all(is.numeric(MMWRweek)))
