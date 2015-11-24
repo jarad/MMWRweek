@@ -15,4 +15,4 @@ Description: The first day of any MMWR week is Sunday.
 	Dates to MMWR day, week, and year and the reverse.
 License: GPL (>= 2) | file LICENSE
 LazyLoad: yes
-URL: <http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf>
+URL: http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf
