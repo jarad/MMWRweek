@@ -1,18 +1,20 @@
 Package: MMWRweek
 Type: Package
-Title: Convert Dates to MMWR Day, Week, and Year 
+Title: Convert Dates to MMWR Day, Week, and Year
 Version: 0.1
 Date: 2015-11-24
 Author: Jarad Niemi <niemi@iastate.edu>
 Maintainer: Jarad Niemi <niemi@iastate.edu>
-Suggests: testthat
-Description: The first day of any MMWR week is Sunday. 
-	MMWR week numbering is sequential beginning with 1 
-	and incrementing with each week to a maximum of 52 
-	or 53. MMWR week #1 of an MMWR year is the first week 
-	of the year that has at least four days in the calendar 
-	year. This package provides functionality to convert 
-	Dates to MMWR day, week, and year and the reverse.
+Suggests:
+    testthat
+Description: The first day of any MMWR week is Sunday.
+    MMWR week numbering is sequential beginning with 1
+    and incrementing with each week to a maximum of 52
+    or 53. MMWR week #1 of an MMWR year is the first week
+    of the year that has at least four days in the calendar
+    year. This package provides functionality to convert
+    Dates to MMWR day, week, and year and the reverse.
 License: GPL (>= 2) | file LICENSE
 LazyLoad: yes
 URL: http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf
+RoxygenNote: 5.0.1
