@@ -1,5 +1,5 @@
 ## Test enviroments
-* local OS X install, R 3.1.2
+* local OS X install, R 3.2.2
 * win-builder (devel and release)
 
 
