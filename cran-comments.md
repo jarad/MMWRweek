@@ -15,4 +15,4 @@ New submission
 
 ## New submission
 
-I have read and agree to the CRAN submission policies. 
+I have read and agree to the CRAN submission policies <https://cran.r-project.org/web/packages/policies.html>. 
