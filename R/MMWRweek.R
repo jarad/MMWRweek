@@ -15,7 +15,7 @@
 #' @param date vector which can be coerced to class \code{Date}
 #' @return data.frame with elements MMWRday (of the week), MMWRweek, and MMWRyear
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
-#' @seealso \code{\link{get_start_date}}, \code{\link{MMWRweekday}}
+#' @seealso \code{\link{MMWRweekday}}, \code{\link{MMWRweek2Date}}
 #' @references \url{http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf}
 #' @export 
 #' @examples
