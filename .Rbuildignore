@@ -1,4 +1,6 @@
+.gitignore
 ^.*\.Rproj$
 ^\.Rproj\.user$
 cran-comments.md
 ^\.travis\.yml$
+.git/
