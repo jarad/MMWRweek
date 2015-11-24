@@ -1,4 +1,4 @@
 library(testthat)
-library(CDCweek)
+library(MMWRweek)
 
-test_package("CDCweek")
+test_package("MMWRweek")
