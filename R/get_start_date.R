@@ -6,8 +6,6 @@
 #' @return Date vector for January 1st of the calendar year
 #' @seealso \code{\link{get_start_date}}
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
-#' @examples
-#' start_date(2015)
 start_date = function(year) {
   # Finds start state for this calendar year
   jan1 = as.Date(paste(year, '-01-01', sep=''))
@@ -21,8 +19,6 @@ start_date = function(year) {
 #' @return Date vector for start date of MMWR year associated with date
 #' @author Jarad Niemi \email{niemi@@iastate.edu}
 #' @seealso \code{\link{start_date}}
-#' @examples
-#' get_start_date(as.Date('2015-01-01')+ -10:10)
 get_start_date <- function(date) {
   year = as.integer(format(as.Date(date),'%Y'))
   
