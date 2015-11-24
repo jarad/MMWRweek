@@ -15,9 +15,6 @@ Date vector for January 1st of the calendar year
 \description{
 Finds the state date given a numeric calendar year
 }
-\examples{
-start_date(2015)
-}
 \author{
 Jarad Niemi \email{niemi@iastate.edu}
 }

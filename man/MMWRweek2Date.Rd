@@ -14,13 +14,13 @@ MMWRweek2Date(MMWRyear, MMWRweek, MMWRday = NULL)
 \item{MMWRday}{numeric vector of days, defaults to a vector of 1s}
 }
 \value{
-Date vector of actual dates
+Date vector of dates associated with MMWR year, week, and day
 }
 \description{
 Computes the Date from the MMWR year, week, and day.
 }
 \examples{
-MMWRweek2Date(2015,36,3)
+MMWRweek2Date(MMWRyear=2015,MMWRweek=36,MMWRday=3)
 }
 \author{
 Jarad Niemi \email{niemi@iastate.edu}

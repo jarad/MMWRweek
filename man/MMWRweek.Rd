@@ -37,6 +37,6 @@ Jarad Niemi \email{niemi@iastate.edu}
 \url{http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf}
 }
 \seealso{
-\code{\link{get_start_date}}, \code{\link{MMWRweekday}}
+\code{\link{MMWRweekday}}, \code{\link{MMWRweek2Date}}
 }
 

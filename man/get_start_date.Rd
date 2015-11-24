@@ -15,9 +15,6 @@ Date vector for start date of MMWR year associated with date
 \description{
 Finds the start date for the year associated with date.
 }
-\examples{
-get_start_date(as.Date('2015-01-01')+ -10:10)
-}
 \author{
 Jarad Niemi \email{niemi@iastate.edu}
 }
