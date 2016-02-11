@@ -1,4 +1,7 @@
 ---
+title: "README"
+author: Jarad Niemi
+date: 11 Feb 2016
 output:
   md_document:
     variant: markdown_github
@@ -29,5 +32,6 @@ year. This package provides functionality to convert
 Dates to MMWR day, week, and year and the reverse.
 
 ```{r, echo = TRUE}
+library(MMWRweek)
 MMWRweek('2015-11-24')
 ```
