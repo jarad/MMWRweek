@@ -3,7 +3,11 @@ context('MMWRweekday')
 days = c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday')
 
 dates = seq(as.Date('1900-01-01'), as.Date('2015-12-31'), by='day')
+
+oldlocale <- Sys.getlocale("LC_TIME")
+Sys.setlocale("LC_TIME", "C")
 truth = factor(weekdays(dates), levels=days)
+Sys.setlocale("LC_TIME", oldlocale)
 
 test_that('MMWRweekday returns a factor vector', {
   wday = MMWRweekday(dates)
@@ -17,4 +21,4 @@ test_that('MMWRweekday returns correct values', {
   expect_that(MMWRweekday(dates    ), equals(truth))
   expect_that(MMWRweekday(dates_chr), equals(truth))
 })
- 
+
