@@ -10,7 +10,7 @@ MMWRweekday(date)
 \item{date}{vector which can be coerced to class \code{Date}}
 }
 \value{
-vector of weekdays as a factor
+vector of weekdays as a factor (first level is Sunday)
 }
 \description{
 This function returns the weekday of a given date according to MMWR.
@@ -19,10 +19,9 @@ This function returns the weekday of a given date according to MMWR.
 y <- as.Date(paste(1999:2011, "-12-31", sep = ""))
 data.frame(date = format(y), MMWRweekday = MMWRweekday(y))
 }
-\author{
-Jarad Niemi \email{niemi@iastate.edu}
-}
 \seealso{
 \code{\link{MMWRweek}}
 }
-
+\author{
+Sebastian Meyer \email{seb.meyer@fau.de}
+}

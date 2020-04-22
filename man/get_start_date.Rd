@@ -15,10 +15,9 @@ Date vector for start date of MMWR year associated with date
 \description{
 Finds the start date for the year associated with date.
 }
-\author{
-Jarad Niemi \email{niemi@iastate.edu}
-}
 \seealso{
 \code{\link{start_date}}
 }
-
+\author{
+Jarad Niemi \email{niemi@iastate.edu}
+}

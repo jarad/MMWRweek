@@ -15,10 +15,9 @@ Date vector for January 1st of the calendar year
 \description{
 Finds the state date given a numeric calendar year
 }
-\author{
-Jarad Niemi \email{niemi@iastate.edu}
-}
 \seealso{
 \code{\link{get_start_date}}
 }
-
+\author{
+Jarad Niemi \email{niemi@iastate.edu}
+}

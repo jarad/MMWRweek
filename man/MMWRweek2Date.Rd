@@ -22,10 +22,9 @@ Computes the Date from the MMWR year, week, and day.
 \examples{
 MMWRweek2Date(MMWRyear=2015,MMWRweek=36,MMWRday=3)
 }
-\author{
-Jarad Niemi \email{niemi@iastate.edu}
-}
 \seealso{
 \code{\link{MMWRweek}}
 }
-
+\author{
+Jarad Niemi \email{niemi@iastate.edu}
+}

@@ -30,13 +30,12 @@ fall into MMWR week #1 of the following MMWR year.
 y = as.Date(paste(1999:2011, "-12-31", sep = ""))
 cbind(y, MMWRweek(y))
 }
-\author{
-Jarad Niemi \email{niemi@iastate.edu}
-}
 \references{
 \url{http://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf}
 }
 \seealso{
 \code{\link{MMWRweekday}}, \code{\link{MMWRweek2Date}}
 }
-
+\author{
+Jarad Niemi \email{niemi@iastate.edu}
+}
