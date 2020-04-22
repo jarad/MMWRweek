@@ -2,7 +2,7 @@ Package: MMWRweek
 Type: Package
 Title: Convert Dates to MMWR Day, Week, and Year
 Version: 0.1.3
-Date: 2015-11-24
+Date: 2019-04-22
 Author: Jarad Niemi <niemi@iastate.edu>
 Maintainer: Jarad Niemi <niemi@iastate.edu>
 Suggests:
