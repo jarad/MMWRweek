@@ -5,11 +5,9 @@
 
 
 ## R CMD check results
-There were no ERRORs or WARNINGs.
+There were no ERRORs, WARNINGs, or NOTES.
 
 
-
-
-## New submission
-
-I have read and agree to the CRAN submission policies <https://cran.r-project.org/web/packages/policies.html>. 
+## Downstream dependencies.
+Two packages depend on MMWRweek: cdcfluview and zoltr.
+Used revdepcheck::revdep_check() and both packages passed.

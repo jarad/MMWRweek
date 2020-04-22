@@ -1,5 +1,6 @@
 release_date: 2020-04-22
-rel_release_date: 
+rel_release_date: day
 my_news_url: https://github.com/jarad/MMWRweek/blob/master/NEWS.md
 release_version: 0.1.3
-release_details: ???
+release_details: >
+    Update MMWRweekday to deal with non-US locales.
